@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const User = require('./Schemas/User');
-const Scholarship = require('./Schemas/Scholarship');
+const User = require('./Schema/User');
+const Scholarship = require('./Scholarship/Scholarship');
 
 const app = express();
 
@@ -76,15 +76,6 @@ app.delete('/users/:id', async (req, res) => {
 });
 
 // Scholarship Routes
-app.get('/scholarships', async (req, res) => {
-    try {
-        const scholarships = await Scholarship.find();
-        res.json(scholarships);
-    } catch (error) {
-        res.status(500).send();
-    }
-});
-
 app.post('/scholarships', async (req, res) => {
     try {
         const scholarship = new Scholarship(req.body);
@@ -133,6 +124,7 @@ app.delete('/scholarships/:id', async (req, res) => {
 
 // Recommendations Route
 // Implement the logic for recommendations based on user's profile
+
 app.get('/users/:id/recommendations', async (req, res) => {
     try {
         const user = await User.findById(req.params.id);
@@ -149,6 +141,7 @@ app.get('/users/:id/recommendations', async (req, res) => {
             if (scholarship.nationalityCriteria.length && !scholarship.nationalityCriteria.includes(user.nationality)) return false;
             
             // You can add more hard filters as needed
+            console.log("test")
             
             return true;  // Only pass scholarships that meet all hard filters
         })
@@ -170,7 +163,8 @@ app.get('/users/:id/recommendations', async (req, res) => {
         });
         // Sort scholarships by points
         const sortedScholarships = rankedScholarships.sort((a, b) => b.points - a.points);
-        const filteredScholarships = sortedScholarships.filter(s => s.points > 0 || sortedScholarships[0].points === 0);
+        const top20Scholarships = sortedScholarships.slice(0, 20);
+        const filteredScholarships = top20Scholarships.filter(s => s.points > 0 || top20Scholarships[0].points === 0);
 
         if (filteredScholarships.length === 0) {
             // If no matched scholarships, send some default ones (e.g., top 5 by application deadline)
@@ -186,6 +180,6 @@ app.get('/users/:id/recommendations', async (req, res) => {
 });
 
 
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
+app.listen(8000, () => {
+    console.log('Server is running on port 8000');
 });
