@@ -19,7 +19,7 @@ const SignUp2 = () => {
   const [fieldOfStudy, setFieldOfStudy] = useState("");
   const [currentAcademicLevel, setCurrentAcademicLevel] = useState("");
   const [testScores, setTestScores] = useState({ SAT: "", ACT: "", GRE: "" });
-  const [DOB, setDOB] = useState("");
+  const [DOB, setDOB] = useState(null);
   const [gender, setGender] = useState("");
   const [ethnicity, setEthnicity] = useState("");
   const [nationality, setNationality] = useState("");
