@@ -25,7 +25,7 @@ function StudentDashboard() {
       <div className="w-3/4 p-4">
         <Routes>
           <Route path="/studentdashboard/applied" element={<Applied />} />
-          <Route path="analytics" element={<Analytics />} />
+          <Route path="/studentdashboard/analytics" element={<Analytics />} />
           <Route path="visanprep" element={<VisaNPrep />} />
         </Routes>
         <div className="flex flex-col items-center">
