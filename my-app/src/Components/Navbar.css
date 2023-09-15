@@ -1,38 +1,58 @@
+/* Navbar.css */
+body {
+  background-color: #1a1a2e; 
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #333;
-  }
-  
-  .navbar-left,
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-logo {
-    max-width: 100px;
-    height: auto;
-  }
-  
-  .navbar-link {
-    margin-right: 1rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar-button {
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar-button:hover {
-    background-color: #0056b3;
-  }
-  
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 30px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.1); 
+backdrop-filter: blur(10px);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+width: 80%; /* Reduced from 90% to 80% for more padding on the sides */
+margin: 2% auto; /* Centering the navbar */
+}
+
+.navbar-left,
+.navbar-right {
+display: flex;
+align-items: center;
+}
+
+.navbar-right {
+  padding-right: 40px; /* Added padding to shift the links inside */
+}
+
+.navbar-logo {
+height: 40px; 
+width: auto;
+margin-right: 20px;
+}
+
+.navbar-link {
+margin-right: 20px;
+color: black; 
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+color: #A8A8B3;
+}
+
+.navbar-button {
+background-color: transparent;
+border: 2px solid black;
+color: black;
+padding: 8px 16px;
+border-radius: 20px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-button:hover {
+background-color: #E1E1E6;
+color: #1a1a2e;
+}

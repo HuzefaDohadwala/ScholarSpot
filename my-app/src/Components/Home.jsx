@@ -1,37 +1,37 @@
 import React from 'react'
 import './Home.css'
 
+
 const Home = () => {
   return (
     <>
-      <div className="home_section1 flex mt-4">
-        <div className='flex-auto w-1/2 h-80 bg-gradient-to-r from-sky-500 to-indigo-500 flex items-center justify-center'>
-            <div className="text-center">
-                <h1 className="text-2xl font-bold mb-4">
-                    Explore Top Scholarships
-                </h1>
-                <p className="mb-6">
-                    Discover and apply to thousands of scholarships to help fund your education.
-                </p>
-                <button className="py-2 px-6 rounded-full bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-md transition duration-300">
-                    Sign Up
-                </button>
-            </div>
-        </div>
-
-        <div className='flex-auto w-1/2 flex items-center justify-center'>
-            <h1>
-                Image section
+<div className="home_section1 flex mt-4 overflow-hidden">
+    <div className='flex-auto w-1/2 h-80 bg-gradient-to-r from-sky-500 to-indigo-500 flex items-center justify-center transition-transform duration-500 hover:scale-105'>
+        <div className="text-center transform transition-opacity duration-500 hover:opacity-90">
+            <h1 className="text-4xl font-semibold mb-4 tracking-tight">
+                Explore Top Scholarships
             </h1>
+            <p className="mb-8 text-lg">
+                Discover and apply to thousands of scholarships to help fund your education.
+            </p>
+            <button className="py-2 px-8 rounded-full bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-lg transition-transform transform duration-300 hover:scale-105">
+                Sign Up
+            </button>
         </div>
-      </div>
+    </div>
+
+    <div className='flex-auto w-1/2 h-80 flex items-center justify-center transition-transform duration-500 hover:scale-105'>
+        <div className="transform transition-opacity duration-500 hover:opacity-90">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Descriptive Alt Text" className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"/>
+        </div>
+    </div>
+</div>
 
     <div className="home_section2 items-center justify-center">
-        <div className="sec_head2 text-center mt-10 font-bold text-5xl mb-10">
-            <h1>
-                See Matches Based on Your Preference
-            </h1>
-        </div>
+    <div className="sec_head2 text-center mt-16 font-bold text-7xl mb-10">
+        See Matches Based on Your Preference
+</div>
+
     </div>
     <div className="about3_container">
       <h1 className="about3_title text-center">Check out the filters below</h1>
