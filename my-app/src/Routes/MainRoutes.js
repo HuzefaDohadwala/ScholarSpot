@@ -6,6 +6,7 @@ import SignUp1 from "../Components/SignUp1";
 import SignUp2 from "../Components/SignUp2";
 import StudentDashboard from "../Components/StudentDashboard";
 import College from "../Components/College";
+import Applied from "../Components/Applied";
 
 function MainRoutes() {
   return (
@@ -16,6 +17,7 @@ function MainRoutes() {
       <Route path="/signup2" element={<SignUp2 />} />
       <Route path="/studentdashboard/*" element={<StudentDashboard />} />
       <Route path="/studentdashboard/:collegeId" element={<College />} />
+      <Route path="/studentdashboard/applied" element={<Applied />} />
       <Route path="/" element={<Home />} />
     </Routes>
   );

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://images.pexels.com/photos/207684/pexels-photo-207684.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 4,
+    "imageUrl": "https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 5,
+    "imageUrl": "https://images.pexels.com/photos/207729/pexels-photo-207729.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 6,
+    "imageUrl": "https://images.pexels.com/photos/556195/pexels-photo-556195.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 7,
+    "imageUrl": "https://images.pexels.com/photos/2305098/pexels-photo-2305098.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 8,
+    "imageUrl": "https://images.pexels.com/photos/2350925/pexels-photo-2350925.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 9,
+    "imageUrl": "https://images.pexels.com/photos/5624158/pexels-photo-5624158.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 10,
+    "imageUrl": "https://images.pexels.com/photos/2982449/pexels-photo-2982449.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 11,
+    "imageUrl": "https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 12,
+    "imageUrl": "https://images.pexels.com/photos/357271/pexels-photo-357271.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 13,
+    "imageUrl": "https://images.pexels.com/photos/227405/pexels-photo-227405.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 14,
+    "imageUrl": "https://images.pexels.com/photos/11823056/pexels-photo-11823056.jpeg?auto=compress&cs=tinysrgb&w=600"
+  },
+  {
+    "id": 15,
+    "imageUrl": "https://media.istockphoto.com/id/173598452/photo/university-in-autumn.jpg?s=612x612&w=0&k=20&c=jQqpZuTZ6qXIfWqnCW5nqlExJZO0PO47L-ZiaE8jIk0="
+  },
+  {
+    "id": 16,
+    "imageUrl": "https://media.istockphoto.com/id/1347616560/photo/a-view-of-the-fa%C3%A7ades-of-royce-hall-and-haines-hall-at-university-of-california-los-angeles.jpg?s=612x612&w=0&k=20&c=4vosGBb4ozEBntNcp0cQvk5rNuM_8wYbredw06rchlc="
+  },
+  {
+    "id": 17,
+    "imageUrl": "https://media.istockphoto.com/id/157476686/photo/university-lecture-hall-college-dorm-school-or-campus-education-building.jpg?s=612x612&w=0&k=20&c=vHUbXlEiNQvgK0Jo96SflLppzFgSxF-oHNC7UMVpOP8="
+  },
+  {
+    "id": 18,
+    "imageUrl": "https://media.istockphoto.com/id/1020211678/photo/typical-american-school-building-exterior.jpg?s=612x612&w=0&k=20&c=o21FkhAdwF9sQ_ysZ0SBKZyqu5UPtKsS-8bVM-Zg3CI="
+  },
+  {
+    "id": 19,
+    "imageUrl": "https://media.istockphoto.com/id/519685267/photo/university-of-toronto.jpg?s=612x612&w=0&k=20&c=Bp9tj8_E8ucVdSlEVrGI7L0KboY-SVaTNaiLcMRhJZk="
+  },
+  {
+    "id": 20,
+    "imageUrl": "https://media.istockphoto.com/id/173034110/photo/a-campus-building-at-mount-holyoke-college-massachusetts.jpg?s=612x612&w=0&k=20&c=kwZI7eWXac3rwwsqB9tQDzgD2hHyosghOKlLffJ9eRY="
+  }
+]

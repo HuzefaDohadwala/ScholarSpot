@@ -1,10 +1,11 @@
-import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import Sidebar from './Sidebar';
-import Applied from './Applied';
-import VisaNPrep from './VisaNPrep';
-import collegesData from './Insti.json';
-import College from './College'; // Import the College component
+import React from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import Applied from "./Applied";
+import Analytics from "./Analytics";
+import VisaNPrep from "./VisaNPrep";
+import collegesData from "./Insti.json";
+// Import the College component
 
 function StudentDashboard() {
   return (
@@ -14,8 +15,8 @@ function StudentDashboard() {
       {/* Main Content (3/4 width) */}
       <div className="w-3/4 p-4">
         <Routes>
-          <Route path="applied" element={<Applied />} />
-          <Route path="analytics" element={<Applied />} />
+          <Route path="/studentdashboard/applied" element={<Applied />} />
+          <Route path="analytics" element={<Analytics />} />
           <Route path="visanprep" element={<VisaNPrep />} />
         </Routes>
         <div className="flex flex-col items-center">
@@ -33,14 +34,23 @@ function StudentDashboard() {
                   <div className="card-body">
                     <h4 className="card-title">{college.name}</h4>
                     <h4 className="card-title">{college.location}</h4>
-                    <h4 className="card-title">Scholarship Value: {college.scholarshipValue}</h4>
-                    <h4 className="card-title">GRE/SAT Score: {college.greSatScore}</h4>
-                    <h4 className="card-title">Last date to submit: {college.lastDateToSubmit}</h4>
+                    <h4 className="card-title">
+                      Scholarship Value: {college.scholarshipValue}
+                    </h4>
+                    <h4 className="card-title">
+                      GRE/SAT Score: {college.greSatScore}
+                    </h4>
+                    <h4 className="card-title">
+                      Last date to submit: {college.lastDateToSubmit}
+                    </h4>
                     <p className="card-text">{college.description}</p>
                   </div>
                 </div>
                 <div className="card-footer">
-                  <Link to={`/studentdashboard/${college.id}`} className="text-blue-500">
+                  <Link
+                    to={`/studentdashboard/${college.id}`}
+                    className="text-blue-500"
+                  >
                     More Info
                   </Link>
                 </div>

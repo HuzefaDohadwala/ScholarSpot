@@ -1,0 +1,36 @@
+.tableApplied {
+  border-radius: 10px; /* Add rounded corners to the table */
+  overflow: hidden; /* Ensure corners are rounded properly */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.tableBody td {
+  border-bottom: 1px solid #ccc; /* Add border between table rows */
+}
+
+.binIcon {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+}
+
+/* Applied.css */
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.acceptedStatus {
+  background-color: #28a745; /* Green for accepted */
+  color: white;
+}
+
+.rejectedStatus {
+  background-color: #dc3545; /* Red for rejected */
+  color: white;
+}
+
+.inProcessStatus {
+  background-color: #007bff; /* Blue for in process */
+  color: white;
+}
