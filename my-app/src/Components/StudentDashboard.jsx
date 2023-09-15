@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import Applied from "./Applied";
 import Analytics from "./Analytics";
 import VisaNPrep from "./VisaNPrep";
-import collegesData from "./Insti.json";
+// import collegesData from "./Insti.json";
 // Import the College component
 
 function StudentDashboard() {
@@ -60,6 +60,7 @@ function StudentDashboard() {
         </div>
       </div>
     </div>
+    
   );
 }
 

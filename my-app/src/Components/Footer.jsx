@@ -5,28 +5,32 @@ const Footer = () => {
   // Sample titles for the 2nd and 3rd columns
   const columnTitles = [
     "Home",
-    "About Us",
-    "Careers",
-    "Providers",
-    "Blog",
-    "Help Center",
+    "Scholarships",
+    "Featured Scholarships",
+    "Scholarship Categories",
+    "How to Apply",
+    "Resources",
   ];
+  
 
   const columnTitles2 = [
-    "Nondiscrimination Policy",
-    "Health Information Policy",
+    "Scholarship Terms of Use",
     "Privacy Policy",
-    "Practice Policy",
-    "Terms of Service",
-    "Cookie Preferences",
+    "Cookie Policy",
+    "Nondiscrimination Policy",
+    "Terms and Conditions",
+    "Email: your@email.com",
+    "Phone: +91 (123) 456-7890"
   ];
+  
+  
 
   return (
     <div className="parent-wrapper">
       <div className="footer-wrapper">
         {/* 1st column with Logo */}
         <div className="logo-wrapper">
-          <h1>Betterhelp</h1>
+          <h1>Scholar Spot </h1>
         </div>
 
         {/* 2nd column with titles */}

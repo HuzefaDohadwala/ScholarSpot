@@ -1,41 +1,65 @@
 .sidebar {
-  width: 200px;
-  height: 100vh;
-  background-color: #0090c1;
-  padding: 20px;
+  width: 180px; 
+  height: 80vh;
+  background: linear-gradient(to right, #3c8ce7, #4c51bf);
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the left side */
+  justify-content: center; /* Center the items vertically */
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.sidebar:hover {
+  transform: scale(1.02);
 }
 
 .sidebar ul {
+  color: white;
   list-style-type: none;
-  width: 100%; /* This ensures the ul takes the full width of the sidebar */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0; /* To ensure no additional padding affects the centering */
 }
 
 .sidebar ul li {
-  margin-bottom: 15px; /* Increased margin for a bit more space */
-  width: 100%; /* Make the li take the full width of the ul */
-  border-bottom: 1px solid #61c6fa; /* Added border bottom */
+  margin: 10px 0; /* Equal top and bottom margins */
+  width: 90%; /* Slightly less than 100% for a better fit with the capsule shape */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align items to the start */
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 10px 5%; /* Padding to ensure content fits within the capsule shape */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Hide overflowing text (you can remove this if you prefer) */
+  text-overflow: ellipsis; /* Display an ellipsis for overflowing text */
 }
 
 .sidebar ul li:hover {
-  background-color: #61c6fa; /* Change background color on hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
 }
 
 .sidebar ul li a {
   text-decoration: none;
   color: #cbf7ff;
+  font-size: 1.2em; /* Increased font size */
   transition: color 0.3s;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
+  display: flex; /* To align text and images */
+  align-items: center; /* Center alignment */
+}
+
+.sidebar ul li img {
+  width: 24px; /* Image width */
+  height: 24px; /* Image height */
+  margin-right: 10px; /* Spacing between the image and text */
 }
 
 .sidebar ul li a:hover {
