@@ -102,37 +102,37 @@ const Home = () => {
             </h1>
         </div>
     </div>
-    <div class="grid grid-cols-4 gap-4">
-  <div class="border p-4 rounded">
-    <div class="mb-2">
-      {/* <img src="path-to-logo1.png" alt="Logo 1" class="w-24 h-24"> */}
+    <div className="grid grid-cols-4 gap-4">
+  <div className="border p-4 rounded">
+    <div className="mb-2">
+      {/* <img src="path-to-logo1.png" alt="Logo 1" className="w-24 h-24"> */}
     </div>
-    <div class="mb-2 font-bold">Name 1</div>
-    <div class="mb-2">Description 1</div>
+    <div className="mb-2 font-bold">Name 1</div>
+    <div className="mb-2">Description 1</div>
     <div>Deadline: 1st Jan 2023</div>
   </div>
-  <div class="border p-4 rounded">
-    <div class="mb-2">
-      {/* <img src="path-to-logo2.png" alt="Logo 2" class="w-24 h-24"> */}
+  <div className="border p-4 rounded">
+    <div className="mb-2">
+      {/* <img src="path-to-logo2.png" alt="Logo 2" className="w-24 h-24"> */}
     </div>
-    <div class="mb-2 font-bold">Name 2</div>
-    <div class="mb-2">Description 2</div>
+    <div className="mb-2 font-bold">Name 2</div>
+    <div className="mb-2">Description 2</div>
     <div>Deadline: 2nd Jan 2023</div>
   </div>
-  <div class="border p-4 rounded">
-    <div class="mb-2">
-      {/* <img src="path-to-logo3.png" alt="Logo 3" class="w-24 h-24"> */}
+  <div className="border p-4 rounded">
+    <div className="mb-2">
+      {/* <img src="path-to-logo3.png" alt="Logo 3" className="w-24 h-24"> */}
     </div>
-    <div class="mb-2 font-bold">Name 3</div>
-    <div class="mb-2">Description 3</div>
+    <div className="mb-2 font-bold">Name 3</div>
+    <div className="mb-2">Description 3</div>
     <div>Deadline: 3rd Jan 2023</div>
   </div>
-  <div class="border p-4 rounded">
-    <div class="mb-2">
-      {/* <img src="path-to-logo4.png" alt="Logo 4" class="w-24 h-24"> */}
+  <div className="border p-4 rounded">
+    <div className="mb-2">
+      {/* <img src="path-to-logo4.png" alt="Logo 4" className="w-24 h-24"> */}
     </div>
-    <div class="mb-2 font-bold">Name 4</div>
-    <div class="mb-2">Description 4</div>
+    <div className="mb-2 font-bold">Name 4</div>
+    <div className="mb-2">Description 4</div>
     <div>Deadline: 4th Jan 2023</div>
   </div>
 </div>
