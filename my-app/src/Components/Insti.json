@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "College A",
+    "location": "City A",
+    "scholarshipValue": "$10,000",
+    "greSatScore": "1400",
+    "description": "Some info about College A",
+    "lastDateToSubmit": "2023-12-31",
+    "collegeBoardCode": "12345", 
+    "applicationTypesAccepted": "Common App, Coalition App", 
+    "easyApply": true 
+  },
+  {
+    "id": 2,
+    "name": "College B",
+    "location": "City B",
+    "scholarshipValue": "$8,000",
+    "greSatScore": "1300",
+    "description": "Some info about College B",
+    "lastDateToSubmit": "2023-12-15",
+    "collegeBoardCode": "67890", 
+    "applicationTypesAccepted": "Common App", 
+    "easyApply": false 
+  }
+]
