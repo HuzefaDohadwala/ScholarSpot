@@ -12,8 +12,8 @@
   
   .footer-wrapper {
     flex: 3; /* This will take up 3/4th of the parent-wrapper */
-    background-color: #353645; /* Dark blue background */
-    color: #ecf0f1; /* Light text color for contrast */
+    background-color: #e6e6fa; /* Dark blue background */
+    color: black; /* Light text color for contrast */
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three equal columns */
     gap: 20px; /* Space between columns */

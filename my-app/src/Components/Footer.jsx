@@ -23,7 +23,6 @@ const Footer = () => {
 
   return (
     <div className="parent-wrapper">
-      <div className="footer_emptySpace"></div>
       <div className="footer-wrapper">
         {/* 1st column with Logo */}
         <div className="logo-wrapper">
