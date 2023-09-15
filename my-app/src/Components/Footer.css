@@ -1,7 +1,7 @@
 .parent-wrapper {
   display: flex;
   flex-direction: column;
-  height: 60vh; /* Full viewport height */
+  height: 10vh; /* Full viewport height */
   width: 100%; /* Full viewport width */
 }
 

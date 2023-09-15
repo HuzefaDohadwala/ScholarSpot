@@ -30,7 +30,7 @@ function StudentDashboard() {
   const itemsPerPage = 6;
 
   useEffect(() => {
-    fetch('http://localhost:3001/users/65042667368561a14b763690/recommendations')
+    fetch('http://localhost:8000/users/65042667368561a14b763690/recommendations')
       .then((response) => response.json())
       .then((data) => {
         // Shuffle the uniImages array

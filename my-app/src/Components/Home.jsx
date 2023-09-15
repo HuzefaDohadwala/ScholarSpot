@@ -7,9 +7,18 @@ import location from "../Images/location.png";
 import demographic from "../Images/demographic.png";
 import goal from "../Images/goal.png";
 import essay from "../Images/essay.png";
+import { useNavigate } from 'react-router-dom';
+
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const cardsRef = useRef(null);
+
+  const handleSignUpClick = () => {
+    // Redirect to /signup1 when the button is clicked
+    navigate('/signup1');
+  };
 
   useEffect(() => {
     const fadeInElements = cardsRef.current.querySelectorAll(".fade-in");
@@ -47,9 +56,12 @@ const Home = () => {
               Discover and apply to thousands of scholarships to help fund your
               education.
             </p>
-            <button className="py-2 px-8 rounded-full bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-lg transition-transform transform duration-300 hover:scale-105">
-              Sign Up
-            </button>
+            <button
+      className="py-2 px-8 rounded-full bg-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 shadow-lg transition-transform transform duration-300 hover:scale-105"
+      onClick={handleSignUpClick}
+    >
+      Sign Up
+    </button>
           </div>
         </div>
 
@@ -150,7 +162,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4" ref={cardsRef}>
+      <div className="grid grid-cols-4 gap-4 p-5" ref={cardsRef}>
         {/* Card 1 */}
         <div className="border p-4 rounded fade-in">
           <div className="mb-2">

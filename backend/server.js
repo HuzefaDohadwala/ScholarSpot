@@ -200,5 +200,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(3001, () => {
-    console.log("Server started on http://localhost:3001");
+    console.log("Server started on http://localhost:8000");
 });
