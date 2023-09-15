@@ -1,9 +1,55 @@
 import React, { useState } from "react";
-import Table from "react-bootstrap/Table";
 import "./Applied.css";
 import bin from "./bin.png"; // Import your delete icon image
+import { DataGrid } from "@mui/x-data-grid"; // Ensure you have this library installed
 
 const Applied = () => {
+  const columns = [
+    {
+      field: "title",
+      headerName: "Scholarship Title",
+      flex: 0.3,
+    },
+    {
+      field: "status",
+      headerName: "Status",
+      flex: 0.2,
+      renderCell: (params) => {
+        const status = params.row.status;
+        let className = "";
+        if (status === "Accepted") className = "acceptedStatus";
+        else if (status === "Rejected") className = "rejectedStatus";
+        else className = "inProcessStatus";
+        return <span className={`status ${className}`}>{status}</span>;
+      },
+    },
+    {
+      field: "amount",
+      headerName: "Amount",
+      flex: 0.2,
+    },
+    {
+      field: "appliedOn",
+      headerName: "Applied On",
+      flex: 0.2,
+    },
+    {
+      field: "actions",
+      headerName: "Actions",
+      flex: 0.1,
+      renderCell: (params) => {
+        return (
+          <img
+            src={bin}
+            alt="Delete"
+            onClick={() => handleDelete(params.row.id)}
+            className="binIcon"
+          />
+        );
+      },
+    },
+  ];
+
   const [data, setData] = useState([
     {
       id: 1,
@@ -33,49 +79,21 @@ const Applied = () => {
   };
 
   return (
-    <>
-      <Table className="tableApplied">
-        <thead className="tableHead">
-          <tr>
-            <th>Scholarship Title</th>
-            <th>Status</th>
-            <th>Amount</th>
-            <th>Applied On</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody className="tableBody">
-          {data.map((item) => (
-            <tr key={item.id}>
-              <td>{item.title}</td>
-              <td>
-                <span
-                  className={`status ${
-                    item.status === "Accepted"
-                      ? "acceptedStatus"
-                      : item.status === "Rejected"
-                      ? "rejectedStatus"
-                      : "inProcessStatus"
-                  }`}
-                >
-                  {item.status}
-                </span>
-              </td>
-              <td>{item.amount}</td>
-              <td>{item.appliedOn}</td>
-              <td>
-                <img
-                  src={bin}
-                  alt="Delete"
-                  onClick={() => handleDelete(item.id)}
-                  className="binIcon"
-                />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
-    </>
+    <div
+      className="bg-white rounded-xl shadow-lg w-full ml-5 mr-5 mb-20 max-w-screen-lg mx-auto"
+      style={{ height: 450 }}
+    >
+      <DataGrid
+        rows={data}
+        columns={columns}
+        pageSize={10}
+        disableSelectIconOnClick
+        sx={{
+          boxShadow: 0,
+          border: 0,
+        }}
+      />
+    </div>
   );
 };
 
