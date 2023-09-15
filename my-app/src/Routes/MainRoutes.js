@@ -16,7 +16,7 @@ function MainRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/signup1" element={<SignUp1 />} />
       <Route path="/signup2" element={<SignUp2 />} />
-      <Route path="/studentdashboard/*" element={<StudentDashboard />} />
+      <Route path="/studentdashboard" element={<StudentDashboard />} />
       <Route path="/studentdashboard/:collegeId" element={<College />} />
       <Route path="/studentdashboard/applied" element={<Applied />} />
       <Route path="/studentdashboard/analytics" element={<Analytics />} />

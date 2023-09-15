@@ -193,12 +193,44 @@ app.get('/users/:id/recommendations', async (req, res) => {
     }
 });
 
+// POST route for simple login
+app.post('/login', async (req, res) => {
+    console.log("Checking for user:", req.body.email);
+
+    try {
+        // Fetch the user by email
+        const user = await User.findOne({ email: req.body.email });
+        if (!user) {
+            console.log("No user found for email:", req.body.email);
+            return res.status(400).send({ error: "Email or password is incorrect" });
+         } else {
+            console.log("User found for email:", req.body.email);
+         }
+         
+
+        // Check the password
+        if (req.body.password !== user.password) {
+            console.log("Incorrect password for email:", req.body.email);
+            return res.status(400).send({ error: "Email or password is incorrect" });
+         } else {
+            console.log("Correct password for email:", req.body.email);
+         }
+         
+
+        res.send({ message: "Logged in successfully!" });
+    } catch (error) {
+        console.error("Error in /login:", error);
+        res.status(500).send({ error: "Internal server error" });
+    }
+});
+
+
 // Global error handler
 app.use((err, req, res, next) => {
     console.error("Global error handler:", err);
     res.status(500).send({ error: "Internal server error" });
 });
 
-app.listen(3001, () => {
+app.listen(8000, () => {
     console.log("Server started on http://localhost:8000");
 });
