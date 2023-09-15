@@ -1,27 +1,34 @@
 import React from "react";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul>
         <li>
-          <a href="#filter1">Filter 1</a>
+          Filter 1
         </li>
         <li>
-          <a href="#filter2">Filter 2</a>
+         Filter 2
         </li>
         <li>
-          <a href="#filter3">Filter 3</a>
+        Filter 3
         </li>
         <li>
-          <a href="#cat1">Category 1</a>
+          <Link to='/studentdashboard/applied'>
+          applied
+          </Link>
         </li>
         <li>
-          <a href="#cat2">Category 2</a>
+          <Link to='/studentdashboard/analytics'>
+            analytics
+          </Link>
         </li>
         <li>
-          <a href="#cat3">Category 3</a>
+          <Link to='/studentdashboard/visanprep'>
+              visanprep
+          </Link>
         </li>
       </ul>
     </div>

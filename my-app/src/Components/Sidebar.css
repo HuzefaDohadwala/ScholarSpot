@@ -6,11 +6,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the left side */
 }
 
 .sidebar ul {
   list-style-type: none;
-  padding: 0;
   width: 100%; /* This ensures the ul takes the full width of the sidebar */
   display: flex;
   flex-direction: column;
