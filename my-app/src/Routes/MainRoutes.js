@@ -22,6 +22,8 @@ function MainRoutes() {
       <Route path="/studentdashboard/analytics" element={<Analytics />} />
       <Route path="/" element={<Home />} />
     </Routes>
+
+    
   );
 }
 
