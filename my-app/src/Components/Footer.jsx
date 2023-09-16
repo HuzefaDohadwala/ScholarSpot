@@ -20,7 +20,7 @@ const Footer = () => {
     "Nondiscrimination Policy",
     "Terms and Conditions",
     "Email: your@email.com",
-    "Phone: +91 (123) 456-7890"
+    "Phone: +01 (123) 456-7890"
   ];
   
   
