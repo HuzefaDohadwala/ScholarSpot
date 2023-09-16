@@ -8,6 +8,7 @@ import StudentDashboard from "../Components/StudentDashboard";
 import College from "../Components/College";
 import Applied from "../Components/Applied";
 import Analytics from "../Components/Analytics";
+import VisaNPrep from "../Components/VisaNPrep";
 
 function MainRoutes() {
   return (
@@ -20,6 +21,7 @@ function MainRoutes() {
       <Route path="/studentdashboard/:collegeId" element={<College />} />
       <Route path="/studentdashboard/applied" element={<Applied />} />
       <Route path="/studentdashboard/analytics" element={<Analytics />} />
+      <Route path="/studentdashboard/visanprep" element={<VisaNPrep />} />
       <Route path="/" element={<Home />} />
     </Routes>
 

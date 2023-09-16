@@ -31,7 +31,7 @@ function StudentDashboard() {
   const itemsPerPage = 6;
 
   useEffect(() => {
-    fetch('http://localhost:8000/users/65042667368561a14b763690/recommendations')
+    fetch(`http://localhost:8000/users/${mongoId}/recommendations`)
       .then((response) => response.json())
       .then((data) => {
         // Shuffle the uniImages array
@@ -44,7 +44,7 @@ function StudentDashboard() {
         setCollegesData(collegesWithImages);
       })
       .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  }, [mongoId]);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
