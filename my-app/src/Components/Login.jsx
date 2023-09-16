@@ -10,11 +10,10 @@ import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 const Login = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState(null);
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,9 +21,12 @@ const Login = () => {
     console.log("Email:", email, "Password:", password);
 
     try {
-      const response = await axios.post("http://localhost:8000/login", { email, password });
+      const response = await axios.post("http://localhost:8000/login", {
+        email,
+        password,
+      });
       setMessage(response.data.message);
-      
+
       // If login is successful, navigate to the student dashboard
       if (response.data.message === "Logged in successfully!") {
         navigate("/studentdashboard");
@@ -38,59 +40,60 @@ const Login = () => {
     }
   };
 
-
-
-
-
   return (
     <>
-      <div>
-        <Form onSubmit={handleSubmit}>
-          <Row className="mb-3">
-            <Form.Group as={Col} md="4" controlId="validationCustomEmail">
-              <Form.Label>Email</Form.Label>
-              <InputGroup hasValidation>
-                <Form.Control
-                 type="text"
-                 placeholder="Email"
-                 value={email}
-                 onChange={(e) => setEmail(e.target.value)}
-                 aria-describedby="inputGroupPrepend"
-                 required
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please choose an email.
-                </Form.Control.Feedback>
-              </InputGroup>
-            </Form.Group>
-          </Row>
+      <div className="dark-bg rounded-lg shadow-lg py-16 d-flex align-items-center justify-content-center vh-160 my-16 max-w-lg mx-auto">
+        <div className="form-container">
+          <Form onSubmit={handleSubmit}>
+            <Row className="mb-3">
+              <Form.Group as={Col} md="12" controlId="validationCustomEmail">
+                <Form.Label>Email</Form.Label>
+                <InputGroup hasValidation>
+                  <Form.Control
+                    type="text"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    Please choose an email.
+                  </Form.Control.Feedback>
+                </InputGroup>
+              </Form.Group>
+            </Row>
 
-          <Row className="mb-3">
-            <Form.Group as={Col} md="4" controlId="validationCustomPassword">
-              <Form.Label>Password</Form.Label>
-              <InputGroup hasValidation>
-                <Form.Control
-                  type="password"
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  aria-describedby="inputGroupPrepend"
-                  required
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please choose a Password.
-                </Form.Control.Feedback>
-              </InputGroup>
-            </Form.Group>
-          </Row>
-          <Button type="submit">Next</Button>
+            <Row className="mb-3">
+              <Form.Group as={Col} md="12" controlId="validationCustomPassword">
+                <Form.Label>Password</Form.Label>
+                <InputGroup hasValidation>
+                  <Form.Control
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <Form.Control.Feedback type="invalid">
+                    Please choose a Password.
+                  </Form.Control.Feedback>
+                </InputGroup>
+              </Form.Group>
+            </Row>
+            <Button
+              className="w-40 d-flex align-items-center mx-auto text-center justify-center"
+              type="submit"
+            >
+              Next
+            </Button>
+          </Form>
 
-        </Form>
-
-        
-        <p>
-          Don't have an account? <Link to="/signup1">Sign Up</Link>
-        </p>
+          <p className="mt-2">
+            Don't have an account? <Link to="/signup1">Sign Up</Link>
+          </p>
+        </div>
       </div>
     </>
   );
