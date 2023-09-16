@@ -139,6 +139,19 @@ app.delete('/scholarships/:id', async (req, res) => {
     }
 });
 
+// Fetch a scholarship by uniCode
+app.get('/scholarships/uniCode/:uniCode', async (req, res) => {
+    try {
+        const scholarship = await Scholarship.findOne({ uniCode: req.params.uniCode });
+        if (!scholarship) {
+            return res.status(404).send();
+        }
+        res.send(scholarship);
+    } catch (error) {
+        res.status(500).send();
+    }
+});
+
 // Recommendations Route
 // Implement the logic for recommendations based on user's profile
 app.get('/users/:id/recommendations', async (req, res) => {
@@ -182,7 +195,7 @@ app.get('/users/:id/recommendations', async (req, res) => {
 
         if (filteredScholarships.length === 0) {
             // If no matched scholarships, send some default ones (e.g., top 5 by application deadline)
-            const defaultScholarships = await Scholarship.find().sort({ applicationDeadline: 1 }).limit(5);
+            const defaultScholarships = await Scholarship.find().sort({ applicationDeadline: 1 }).limit(12);
             return res.json(defaultScholarships);
         }
 

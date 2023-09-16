@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Applied.css";
 import bin from "./bin.png"; // Import your delete icon image
 import { DataGrid } from "@mui/x-data-grid"; // Ensure you have this library installed
+import AppliedData from "./AppliedData.json";
 
 const Applied = () => {
   const columns = [
@@ -50,49 +51,33 @@ const Applied = () => {
     },
   ];
 
-  const [data, setData] = useState([
-    {
-      id: 1,
-      title: "ArtUniverse",
-      status: "Accepted",
-      amount: "$1000",
-      appliedOn: "22/08/2022",
-    },
-    {
-      id: 2,
-      title: "Beth Mead Scholarships",
-      status: "Rejected",
-      amount: "$1200",
-      appliedOn: "25/08/2022",
-    },
-    {
-      id: 3,
-      title: "Malaysia Scholarships",
-      status: "In Process",
-      amount: "$1500",
-      appliedOn: "29/08/2022",
-    },
-  ]);
+  const [data, setData] = useState(AppliedData);
 
   const handleDelete = (id) => {
     setData((prevData) => prevData.filter((item) => item.id !== id));
   };
 
+  const handleDataUpdate = (newData) => {
+    setData((prevData) => [...prevData, newData]);
+  };
+
   return (
-    <div
-      className="bg-white rounded-xl shadow-lg w-full ml-5 mr-5 mb-20 max-w-screen-lg mx-auto"
-      style={{ height: 450 }}
-    >
-      <DataGrid
-        rows={data}
-        columns={columns}
-        pageSize={10}
-        disableSelectIconOnClick
-        sx={{
-          boxShadow: 0,
-          border: 0,
-        }}
-      />
+    <div>
+      <div
+        className="bg-white rounded-xl shadow-lg w-full ml-5 mr-5 mb-20 max-w-screen-lg mx-auto"
+        style={{ height: 450 }}
+      >
+        <DataGrid
+          rows={data}
+          columns={columns}
+          pageSize={10}
+          disableSelectIconOnClick
+          sx={{
+            boxShadow: 0,
+            border: 0,
+          }}
+        />
+      </div>
     </div>
   );
 };
