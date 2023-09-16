@@ -38,7 +38,7 @@ app.post('/signup', async (req, res) => {
     try {
         const user = new User(req.body);
         await user.save();
-        res.status(201).send({ message: "User data saved successfully!" });
+        res.status(201).send({ message: "User data saved successfully!" , userId: user._id });
     } catch (error) {
         console.error("Error in /signup:", error);
         res.status(500).send({ error: "Failed to save user data!" });
@@ -217,7 +217,7 @@ app.post('/login', async (req, res) => {
          }
          
 
-        res.send({ message: "Logged in successfully!" });
+        res.send({ message: "Logged in successfully!", userId: user._id  });
     } catch (error) {
         console.error("Error in /login:", error);
         res.status(500).send({ error: "Internal server error" });

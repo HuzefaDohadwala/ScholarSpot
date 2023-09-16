@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 const SignUp2 = () => {
   const [validated, setValidated] = useState(false);
@@ -33,6 +34,7 @@ const SignUp2 = () => {
   const [awards, setAwards] = useState([]);
   const [militaryService, setMilitaryService] = useState(false);
   const [disability, setDisability] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const dataFromSignUp1 = JSON.parse(localStorage.getItem("signupData"));
@@ -96,6 +98,9 @@ const SignUp2 = () => {
         combinedData
       );
       console.log("Server Response:", response.data);
+      if(response.data && response.data.userId) {
+        navigate(`/studentdashboard/user/${response.data.userId}`);
+    }
     } catch (error) {
       console.error("Error submitting data:", error);
     }

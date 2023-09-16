@@ -5,7 +5,7 @@ import Applied from "./Applied";
 import Analytics from "./Analytics";
 import VisaNPrep from "./VisaNPrep";
 import uniImages from "../staticData/Universities.json";
-
+import { useParams } from 'react-router-dom';
 // ... (other imports and component setup)
 
 function shuffleArray(array) {
@@ -25,6 +25,7 @@ function truncateText(text, maxLength) {
 }
 
 function StudentDashboard() {
+  const { mongoId } = useParams();
   const [collegesData, setCollegesData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;

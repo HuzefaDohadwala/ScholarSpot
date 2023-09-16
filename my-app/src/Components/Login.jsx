@@ -29,7 +29,7 @@ const Login = () => {
 
       // If login is successful, navigate to the student dashboard
       if (response.data.message === "Logged in successfully!") {
-        navigate("/studentdashboard");
+        navigate(`/studentdashboard/user/${response.data.userId}`);
       }
     } catch (error) {
       if (error.response) {
