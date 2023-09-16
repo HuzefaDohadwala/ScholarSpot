@@ -1,0 +1,175 @@
+[
+    {
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice.smith@example.com",
+      "password": "securepassword123",
+      "DOB": "1995-07-20",
+      "gender": "Female",
+      "country": "Canada",
+      "pincode": "V5K 2A1",
+      "percentage": 89.2,
+      "currentQualification": "High School Diploma",
+      "desiredMajor": "Biology",
+      "currentAcademicLevel": "High School",
+      "testScores": {
+        "GRE": 310,
+        "TOEFL": 98,
+        "SAT": 1400
+      },
+      "ethnicity": "African American",
+      "nationality": "Canadian",
+      "familyIncome": 55000,
+      "currentLocation": "Toronto",
+      "preferredStudyLocation": "Vancouver",
+      "extraCurricularActivities": "Soccer Team",
+      "personalInterests":  "Painting",
+      "awards":"Student of the Year",
+      "militaryService": false,
+      "disability": true,
+      "name": "Alice Smith",
+      "GPA": 3.6,
+      "fieldOfStudy": "Biology"
+    },
+    {
+      "firstName": "Ethan",
+      "lastName": "Johnson",
+      "email": "ethan.johnson@example.com",
+      "password": "ethanpass123",
+      "DOB": "1988-03-10",
+      "gender": "Male",
+      "country": "United Kingdom",
+      "pincode": "SW1A 1AA",
+      "percentage": 92.7,
+      "currentQualification": "Master's Degree",
+      "desiredMajor": "Finance",
+      "currentAcademicLevel": "Graduate",
+      "testScores": {
+        "GRE": 200,
+        "TOEFL": 88,
+        "SAT": 1000
+      },
+      "ethnicity": "White",
+      "nationality": "British",
+      "familyIncome": 90000,
+      "currentLocation": "London",
+      "preferredStudyLocation": "Edinburgh",
+      "extraCurricularActivities": "Investment Club",
+      "personalInterests": "Traveling",
+      "awards": "Best Finance Thesis",
+      "militaryService": true,
+      "disability": false,
+      "name": "Ethan Johnson",
+      "GPA": 3.9,
+      "fieldOfStudy": "Finance"
+    },
+    {
+      "firstName": "Linda",
+      "lastName": "Garcia",
+      "email": "linda.garcia@example.com",
+      "password": "lindapass456",
+      "DOB": "1993-12-05",
+      "gender": "Female",
+      "country": "Spain",
+      "pincode": "28001",
+      "percentage": 88.0,
+      "currentQualification": "Bachelor's Degree",
+      "desiredMajor": "Art History",
+      "currentAcademicLevel": "Undergraduate",
+      "testScores": {
+        "GRE": 317,
+        "TOEFL": 98,
+        "SAT": 1250
+      },
+      "ethnicity": "Hispanic",
+      "nationality": "Spanish",
+      "familyIncome": 60000,
+      "currentLocation": "Madrid",
+      "preferredStudyLocation": "Barcelona",
+      "extraCurricularActivities":
+        "Art Club",
+      "personalInterests": 
+        "Painting",
+      "awards":
+        "Outstanding Art Student",
+      "militaryService": false,
+      "disability": false,
+      "name": "Linda Garcia",
+      "GPA": 3.5,
+      "fieldOfStudy": "Art History"
+    },
+    {
+      "firstName": "Rahul",
+      "lastName": "Verma",
+      "email": "rahul.verma@example.com",
+      "password": "rahulpass789",
+      "DOB": "1996-06-15",
+      "gender": "Male",
+      "country": "India",
+      "pincode": "110001",
+      "percentage": 93.5,
+      "currentQualification": "Bachelor's Degree",
+      "desiredMajor": "Physics",
+      "currentAcademicLevel": "Undergraduate",
+      "testScores": {
+        "GRE": 300,
+        "TOEFL": 88,
+        "SAT": 1400
+      },
+      "ethnicity": "Asian",
+      "nationality": "Indian",
+      "familyIncome": 65000,
+      "currentLocation": "Delhi",
+      "preferredStudyLocation": "Mumbai",
+      "extraCurricularActivities":
+        "Science Club",
+
+      "personalInterests": 
+        "Astronomy",
+
+      "awards":
+        "Best Physics Student",
+
+      "militaryService": false,
+      "disability": false,
+      "name": "Rahul Verma",
+      "GPA": 3.7,
+      "fieldOfStudy": "Physics"
+    },
+    {
+      "firstName": "Chika",
+      "lastName": "Okoro",
+      "email": "chika.okoro@example.com",
+      "password": "chikapass456",
+      "DOB": "1994-09-22",
+      "gender": "Female",
+      "country": "Nigeria",
+      "pincode": "23401",
+      "percentage": 87.8,
+      "currentQualification": "Bachelor's Degree",
+      "desiredMajor": "Economics",
+      "currentAcademicLevel": "Undergraduate",
+      "testScores": {
+        "GRE": 180,
+        "TOEFL": 68,
+        "SAT": 900
+      },
+      "ethnicity": "Black African",
+      "nationality": "Nigerian",
+      "familyIncome": 50000,
+      "currentLocation": "Lagos",
+      "preferredStudyLocation": "Abuja",
+      "extraCurricularActivities":
+        "Debate Club",
+      "personalInterests": 
+        "Entrepreneurship",
+      "awards":
+        "Economics Excellence Award", 
+      "militaryService": false,
+      "disability": false,
+      "name": "Chika Okoro",
+      "GPA": 3.6,
+      "fieldOfStudy": "Economics"
+    }
+  ]
+  
