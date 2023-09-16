@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "ArtUniverse",
+    "status": "Accepted",
+    "amount": "$1000",
+    "appliedOn": "22/08/2022"
+  },
+  {
+    "id": 2,
+    "title": "Beth Mead Scholarships",
+    "status": "Rejected",
+    "amount": "$1200",
+    "appliedOn": "25/08/2022"
+  },
+  {
+    "id": 3,
+    "title": "Malaysia Scholarships",
+    "status": "In Process",
+    "amount": "$1500",
+    "appliedOn": "29/08/2022"
+  },
+  {
+    "id": 4,
+    "title": "TechForward Grants",
+    "status": "Accepted",
+    "amount": "$1100",
+    "appliedOn": "23/08/2022"
+  },
+  {
+    "id": 5,
+    "title": "European Art Scholarships",
+    "status": "In Process",
+    "amount": "$900",
+    "appliedOn": "20/08/2022"
+  },
+  {
+    "id": 6,
+    "title": "Future Science Grants",
+    "status": "Rejected",
+    "amount": "$1300",
+    "appliedOn": "27/08/2022"
+  },
+  {
+    "id": 7,
+    "title": "World Health Fellowships",
+    "status": "Rejected",
+    "amount": "$1400",
+    "appliedOn": "24/08/2022"
+  },
+  {
+    "id": 8,
+    "title": "GreenPlanet Environmental Scholarships",
+    "status": "In Process",
+    "amount": "$1250",
+    "appliedOn": "21/08/2022"
+  },
+  {
+    "id": 9,
+    "title": "Digital Innovators Scholarships",
+    "status": "In Process",
+    "amount": "$1150",
+    "appliedOn": "26/08/2022"
+  },
+  {
+    "id": 10,
+    "title": "Mars Exploration Grants",
+    "status": "Rejected",
+    "amount": "$1600",
+    "appliedOn": "28/08/2022"
+  }
+]
