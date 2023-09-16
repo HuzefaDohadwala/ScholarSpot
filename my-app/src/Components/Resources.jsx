@@ -33,18 +33,15 @@ const Resources = () => {
 }, []);
   return (
     <>
-    <div className="home_section2 items-center justify-center">
-        <div className="sec_head2 text-center mt-10 font-bold text-5xl mb-10">
-            <h1>
-            Connect. Collaborate.
-            </h1>
-        </div>
-        <div className="sec_head2 text-center font-bold text-5xl mb-10">
-            <h1>
-            Conquer Your Educational Goals.
-            </h1>
-        </div>
-    </div>
+<div className="home_section2 items-center justify-center">
+  <div className="sec_head2 text-center mt-16 font-bold text-7xl mb-10">
+    Connect. Collaborate.
+  </div>
+  <div className="sec_head2 text-center mt-16 font-bold text-7xl mb-10">
+    Conquer Your Educational Goals.
+  </div>
+</div>
+
     <div class="grid grid-cols-3 gap-4 p-6 bg-gray-100 h-80">
     <div class="relative pb-56% rounded shadow overflow-hidden">
         <iframe class="absolute top-0 left-0 w-full h-full" 
@@ -99,25 +96,23 @@ const Resources = () => {
     <div className="disc2_testimony">
     <div className="test1">
         <p className="test_words11">
-        "For years, I felt trapped in my own thoughts, thinking I was alone in my struggles. Discovering this platform became a beacon of hope. The resources and community here have genuinely made a difference in my life. It's reassuring to know I'm not alone on this journey."
-        </p>
+       "For years, I felt trapped in my own thoughts, thinking I was alone in my struggles. Discovering this platform became a beacon of hope. The resources and community here have genuinely made a difference in my life. It's reassuring to know I'm not alone on this journey."" </p>
         <h2 className="test_name1">-Alex M., Chicago, IL</h2>
         </div>
         <div className="test1">
         <p className="test_words12">
-        "I've always been wary of seeking support online, but this platform changed my perspective. The insightful articles, various therapy options, and connections I've made here have been a game-changer. It's more than a website; it's a community where I feel understood."
+        "I stumbled upon this scholarship website during my senior year of high school, feeling lost and overwhelmed. The resources here guided me through the application process, and I'm now attending college debt-free. Thank you for being my guiding light!"
         </p>
         <h2 className="test_name1">-Priya S., Los Angeles, CA</h2>
     </div>
     <div className="test2">
         <p className="test_words21">
-        "Mental health challenges can be a winding, uncertain path, but this platform has been my compass. The guidance, clarity, and support I've received here are unparalleled. The professionals are genuinely compassionate, and I can't express how grateful I am."
-        </p>
+        "As a first-generation college student, I didn't have anyone to turn to for scholarship advice. This website became my go-to resource, connecting me with mentors who helped me win scholarships I never thought possible. Forever thankful!" </p>
         <h2 className="test_name2">-Alex M., Chicago, IL</h2>
         </div>
         <div className="test2">
         <p className="test_words22">
-        "Before I found this platform, I felt like I was navigating a maze without a map. Now, armed with invaluable strategies and resources, I feel more in control of my mental health. Each time I visit, I'm reminded that it's okay to seek help and that I'm part of a larger, supportive community."
+        "I thought scholarships were only for the academic elite until I found this platform. The diverse scholarship opportunities and success stories motivated me to keep applying. Today, I'm on my way to becoming a nurse without drowning in student loans. This website is a game-changer!"
         </p>
         <h2 className="test_name2">-Priya S., Los Angeles, CA</h2>
     </div>
@@ -164,17 +159,15 @@ const Resources = () => {
 </Accordion>
 <Accordion defaultActiveKey="4" style={{ display: 'flex', gap: '2rem', marginBottom: '2rem' }}>
   <Accordion.Item eventKey="0" style={{ flex: 1, borderRadius: '8px', overflow: 'hidden', padding: '1rem' }}>
-    <Accordion.Header style={{ fontSize: '1.25rem', padding: '0.5rem 1rem' }}>Accordion Item #1</Accordion.Header>
+    <Accordion.Header style={{ fontSize: '1.25rem', padding: '0.5rem 1rem' }}>Are there scholarships available for international students?</Accordion.Header>
     <Accordion.Body style={{ padding: '1rem' }}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </Accordion.Body>
+    Yes, we have scholarships available for both domestic and international students. Check the scholarship descriptions for specific eligibility details, as some may be open to students from around the world.</Accordion.Body>
   </Accordion.Item>
   
   <Accordion.Item eventKey="5" style={{ flex: 1, borderRadius: '8px', overflow: 'hidden', padding: '1rem' }}>
-    <Accordion.Header style={{ fontSize: '1.25rem', padding: '0.5rem 1rem' }}>Accordion Item #2</Accordion.Header>
+    <Accordion.Header style={{ fontSize: '1.25rem', padding: '0.5rem 1rem' }}>How can I stay updated on new scholarships added to the website?</Accordion.Header>
     <Accordion.Body style={{ padding: '1rem' }}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </Accordion.Body>
+    You can join our Discord server to get real-time updates, engage with our community, and receive notifications about the latest scholarship opportunities as soon as they are posted. We also recommend following us on social media for additional ways to stay connected and up-to-date.</Accordion.Body>
   </Accordion.Item>
 </Accordion>
 
