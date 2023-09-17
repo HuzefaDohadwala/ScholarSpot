@@ -12,8 +12,8 @@ const Navbar = () => {
         <img src={ScholarSpot} alt="Logo" className="navbar-logo" />
       </div>
       <div className="navbar-right">
-        <Link to="/resource" className="navbar-link">
-          RESOURCE
+        <Link to="/resource" className="navbar-link font-bold">
+          Resources
         </Link>
         {!location.pathname.includes("studentdashboard") && (
           <Link to="/login">

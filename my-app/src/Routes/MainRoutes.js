@@ -9,6 +9,8 @@ import College from "../Components/College";
 import Applied from "../Components/Applied";
 import Analytics from "../Components/Analytics";
 import VisaNPrep from "../Components/VisaNPrep";
+import ScholarshipDetailPage from "../Components/ScholarshipDetailPage";
+import EasyApplyForm from "../Components/EasyApplyForm";
 
 function MainRoutes() {
   return (
@@ -22,6 +24,8 @@ function MainRoutes() {
       <Route path="/studentdashboard/applied" element={<Applied />} />
       <Route path="/studentdashboard/analytics" element={<Analytics />} />
       <Route path="/studentdashboard/visanprep" element={<VisaNPrep />} />
+      <Route path="/scholarship-details/:collegeId" element={< ScholarshipDetailPage/>} />
+      <Route path="/easy-apply-form" element={< EasyApplyForm />} />
       <Route path="/" element={<Home />} />
     </Routes>
 

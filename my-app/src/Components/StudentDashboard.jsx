@@ -91,7 +91,7 @@ function StudentDashboard() {
               <p className="text-base font-semibold">${college.amount}</p>
               <p className="text-gray-500">Deadline: {college.dueDates_date}</p>
               <Link
-                to={`/studentdashboard/${college.uniCode}`}
+                to={`/scholarship-details/${college.uniCode}`}
                 className="text-blue-500 mt-2 hover:underline"
               >
                 More Info
